@@ -1,0 +1,1 @@
+An appcelerator demo application for a custom indicator window as discussed [here](http://www.glatter-gotz.com/blog/2012/03/19/appcelerator-titanium-a-nice-looking-activity-indicator-window/).
