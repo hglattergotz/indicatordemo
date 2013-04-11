@@ -27,8 +27,18 @@ function createIndicatorWindow(args) {
         layout:'horizontal'
     });
     
+    function osIndicatorStyle() {
+        style = Ti.UI.iPhone.ActivityIndicatorStyle.PLAIN;
+        
+        if ('iPhone OS' !== Ti.Platform.name) {
+            style = Ti.UI.ActivityIndicatorStyle.DARK;            
+        }
+        
+        return style;
+    }
+     
     var activityIndicator = Ti.UI.createActivityIndicator({
-        style:Ti.UI.iPhone.ActivityIndicatorStyle.PLAIN,
+        style:osIndicatorStyle(),
         left:0,
         height:Ti.UI.FILL,
         width:30
